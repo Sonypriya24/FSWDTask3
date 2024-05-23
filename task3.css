@@ -1,0 +1,173 @@
+body {
+    background: url("Image/pic3.jpg");
+    background-size: cover;
+  }
+  
+  .nav {
+    background: linear-gradient(to right, transparent, rgba(160, 54, 54, 0.5));
+    overflow: auto;
+    border-radius: 20px;
+    border: 0;
+  }
+  
+  .nav a {
+    font-family: "Ubuntu", sans-serif;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 16px;
+    color: black;
+    text-shadow: 2px 2px 2px brown;
+  }
+  
+  .nav a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .a1, .a2, .a3 {
+    height: 3px;
+    width: 30px;
+    background-color: brown;
+    margin-top: 4px;
+  }
+  
+  .line1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    text-shadow: 2px 2px 2px brown;
+  }
+  
+  .line2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 130px;
+    font-family: "Ubuntu", Serif;
+    color: black;
+    text-shadow: 2px 2px 2px brown;
+  }
+  
+  .line3 {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 800px;
+    font-size: 25px;
+    font-family: "Ubuntu", serif;
+    color: black;
+    text-shadow: 1px 1px 1px brown;
+  }
+  
+  .line4 {
+    font-size: 20px;
+    font-family: "Ubuntu", Serif;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .line5 {
+    font-size: 40px;
+    font-family: "Ubuntu", Serif;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid brown;
+    background: linear-gradient(transparent, rgba(180, 36, 36, 0.6));
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 2px 2px 2px brown;
+    margin: 20px auto;
+  }
+  
+  .btn:hover {
+    background-color: rgba(180, 36, 36, 0.5);
+  }
+  
+  #brew-cafe {
+    background-image: url('brew_cafe_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: lavenderblush;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .nav a {
+      font-size: 16px;
+    }
+  
+    .line2 {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .nav {
+      padding: 10px;
+    }
+  
+    .nav a {
+      font-size: 14px;
+    }
+  
+    .line1 {
+      font-size: 20px;
+    }
+  
+    .line2 {
+      font-size: 60px;
+    }
+  
+    .line3 {
+      font-size: 18px;
+    }
+  
+    .line4 {
+      font-size: 16px;
+    }
+  
+    .line5 {
+      font-size: 30px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  }
+  

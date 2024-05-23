@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3.css">
+    <title>Cafe</title>
+    <style>
+        /* Add your CSS styles for the review column here */
+        .review-column {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .review-column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: "Ubuntu", sans-serif;
+            color: black;
+            text-shadow: 1px 1px 1px brown;
+        }
+        .review-form input[type="text"],
+        .review-form input[type="tel"],
+        .review-form textarea,
+        .review-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: "Ubuntu", sans-serif;
+        }
+        .review-form input[type="submit"] {
+            background-color: #a03636;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            text-shadow: 1px 1px 1px brown;
+        }
+        .review-form input[type="submit"]:hover {
+            background-color: #802b2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+        </a>
+        <a href="#" style="float: right;">Cart</a>
+        <a href="#" style="float: right;">Contact</a>
+        <a href="#" style="float: right;">About</a>
+    </div>
+    <div class="line1">
+        <p class="b1">Workplace Coffee Initiative</p>
+    </div>
+    <div class="line2" id="brew-cafe">
+        Brew Cafe.
+    </div>
+    <div class="line3">
+        Indulge in the rich aroma and invigorating taste of freshly brewed. Experience the magic with every sip of our meticulously crafted coffee blends.
+    </div>
+    <div class="line4">
+        <button class="btn">
+            Coffees
+            <ul>
+                <li>Bean Bliss</li>
+                <li>Roast Rise</li>
+                <li>Espresso Elegance</li>
+                <li>BrewSavvy</li>
+            </ul>
+        </button>
+        <button class="btn">
+            IceCreams
+            <ul>
+                <li>Frosty Dreamery</li>
+                <li>Chill Bliss</li>
+                <li>Scoop Symphony</li>
+                <li>Arctic Swirls</li>
+            </ul>
+        </button>
+        <button class="btn">
+            Shakes
+            <ul>
+                <li>Blueberry Blastoff Shake</li>
+                <li>Chocolate Fudge Delight</li>
+                <li>Cookies and Cream Bliss</li>
+                <li>Vanilla Bean Dream</li>
+            </ul>
+        </button>
+    </div>
+    <div class="line5">
+        <button class="btn">
+            sandwiches
+            <ul>
+                <li>Chicken Club</li>
+                <li>Veggie Delight</li>
+                <li>Turkey & Avocado</li>
+                <li>Italian Submarine</li>
+            </ul>
+        </button>
+        <button class="btn">
+            pastries
+            <ul>
+                <li>Croissant</li>
+                <li>Blueberry Muffin</li>
+                <li>Stollen</li>
+                <li>Rasmalai</li>
+            </ul>
+        </button>
+    </div>
+    <div class="container">
+        <h1>Thank You for Visiting Our Cafe!</h1>
+        <p>We hope you enjoyed exploring our menu and learning more about our cafe's offerings. Here's a quick recap of what we have to offer:</p>
+        <ul>
+            <li>Freshly Brewed Coffees</li>
+            <li>Delicious Ice Creams</li>
+            <li>Indulgent Shakes</li>
+            <li>Delectable Sandwiches</li>
+            <li>Scrumptious Pastries</li>
+        </ul>
+        <p>Feeling inspired to visit us in person? Come by our cafe and experience the cozy atmosphere and delightful flavors for yourself!</p>
+        <p>Stay connected with us for updates on new menu items, special promotions, and events. Follow us on social media and sign up for our newsletter!</p>
+    </div>
+
+    <div class="review-column">
+        <h2>Leave a Review</h2>
+        <form class="review-form">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="tel" placeholder="Your Phone Number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br>
+            <textarea placeholder="Your Review" required></textarea><br>
+            <input type="submit" value="Submit Review">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Brew Cafe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.review-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let name = this.querySelector('input[type="text"]').value;
+            let phone = this.querySelector('input[type="tel"]').value;
+            let review = this.querySelector('textarea').value;
+
+            if (!/^\d{10}$/.test(phone)) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
+            }
+
+            console.log('Name:', name);
+            console.log('Phone:', phone);
+            console.log('Review:', review);
+
+            alert('Thank you for your review!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
